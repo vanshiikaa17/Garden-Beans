@@ -1,0 +1,18 @@
+.MuiStepConnector-root{
+    height:5px;
+}
+.MuiStepper-root{
+    margin-top:2rem;
+}
+.Mui-active,
+.Mui-completed{
+    color:green;
+}
+/* .MuiStepConnector-line{
+    display:none !important;
+} */
+
+.MuiStepLabel-iconContainer>svg{
+    height: 2rem;
+    width: 2rem;
+}

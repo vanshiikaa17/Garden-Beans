@@ -1,0 +1,141 @@
+.banner{
+    display:flex;
+    flex-direction: column;
+    
+    background:
+      linear-gradient(
+        rgba(7, 7, 7, 0.3),
+        rgba(6, 6, 6, 0.3)
+      ),
+      url("./trees.png");
+    height:100vmin;
+    align-items: center;
+    /* justify-content: center; */
+    color:white;
+    font-family: 'Roboto';
+}
+.banner>h1{
+    margin-top: 14.4rem;
+    font-size: 2.4rem;
+    font-family: 'Bad Script';
+
+}
+.banner::after{
+    content: "";
+    background-color: white;
+    height:100vmin;
+    width: 100vw;
+    max-width: 100%;
+    position:absolute;
+    left:0;
+    top:0%;
+    /* clip-path: polygon(100% 73%, 0% 100%, 100% 100%); */
+    clip-path: polygon(53% 0, 0 0, 0 21%);
+    /* clip-path: inset(82% 0 0 0); */
+}
+.heading{
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 1.55px solid rgb(94, 95, 92);
+    width: 14rem;
+    margin:2rem auto;
+    padding: 0.4rem;
+}
+.btn{
+    padding: 0.8rem 1.2rem;
+    font-size: 1.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    border:none;
+    transition: all 0.3s;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+
+
+.btn:hover{
+    color:white;
+    background-color:rgb(240,198,1);
+}
+.container{
+    /* margin: 2rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* border: 2px solid black; */
+
+}
+/* .cardimg{
+    height:14rem;
+} */
+.productCard{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:rgb(34, 33, 33);
+    width:15rem;
+    height: 30rem;
+    font-family: 'Roboto';
+    transition: all 0.65s;
+    box-shadow: 0 5px 5px rgba(15,15,15,0.26);
+    margin: 1rem;
+    padding: 1rem;
+
+}
+.productCard>p{
+    font-size: 1.8rem;
+    margin: 0.43rem 0;
+    font-weight: bold;
+}
+.reviews{
+    font-size: 0.99rem;
+
+}
+.spann{
+    /* margin-top: 0.8rem; */
+    font-size: 1.4rem;
+    color: green;
+
+}
+.productCard:hover{
+    box-shadow: 0 15px 25px rgba(15,15,15,0.26);
+    width: 15.5rem;
+}
+
+@media screen and (max-width:700px) {
+    .banner{
+        height:100vmax;
+        background:
+              linear-gradient(
+                rgba(8, 8, 8, 0.3),
+                rgba(6, 6, 6, 0.1)
+              ),
+              url("./trees.png");
+    }
+    .banner::after{
+        height:100vmax;
+    }
+    .banner>h1{
+        font-size: 1.62rem;
+        margin-top: 14.2rem  ;
+        /* color:blue; */
+    }
+    .banner>h2{
+        font-size: 1.12rem;
+        /* color:blue; */
+    }
+    .btn{
+        padding: 0.65rem 0.85rem;
+        font-size: 1.4rem;
+        margin: 3.4rem;
+       
+    }
+    .heading{
+        font-size: 1.4rem;
+        width: 8.8rem;
+        
+    }
+    
+}
