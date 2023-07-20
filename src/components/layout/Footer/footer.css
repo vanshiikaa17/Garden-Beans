@@ -1,0 +1,43 @@
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    background-color:aquamarine ;
+    margin-top: 100vmin;
+    /* height: 12rem; */
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   margin-bottom: 1rem;
+}
+.footerimages{
+    width: 8.4rem;
+    margin-right: 2rem;
+}
+.bottom a{
+    color:black;
+    margin-right: 0.6rem;
+    font-size: 1.5rem;
+    
+}
+.bottom a:hover{
+    color:tomato;
+}
+.mid{
+    margin-bottom: 1rem;
+    font-family: 'Roboto';
+}
+
+
+@media screen and (max-width:600px) {
+    .mid{
+        font-size: 0.8rem;
+    }
+    #footer{
+        margin-top: 170vmax;
+    }
+}

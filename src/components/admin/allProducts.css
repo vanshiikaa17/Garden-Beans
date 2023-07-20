@@ -1,0 +1,63 @@
+.adminProducts{
+    /* margin-top: 10rem; */
+    /* height: 100%; */
+    max-height: 100%;
+    margin: 10rem 4rem;
+    background-color: rgb(248, 248, 248);
+
+    /* z-index: -1; */
+
+}
+.MuiDataGrid-columnHeader{
+    background-color: green;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.adminProducts h1{
+    text-align: center;
+    font: 200 2.5rem "Roboto";
+    margin:2rem;
+    color: rgb(23, 23, 23);
+}
+.productsTable div{
+    font-size: 1.3rem;
+    color: rgb(44, 44, 44);
+    /* display: flex; */
+    /* border: 2px solid black; */
+
+}
+.productsTable a{
+    font-size: 1.3rem;
+    /* color: rgb(240, 198, 1); */
+    color: green;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+.productsTable a:hover{
+    color: rgb(5, 52, 5);
+
+}
+.productsTable button{
+    font-size: 1.5rem;
+    color: black;
+    transition: all 0.5s;
+
+}
+.productsTable button:hover{
+    color:red;
+}
+@media screen and (max-width:900px) {
+    .adminProducts{
+      margin: 13.5rem 1rem;
+    width: 90%;
+
+    }
+.productsTable div{
+    font-size:1rem;
+}
+.adminProducts h1{
+    font-size: 1.5rem;
+}
+}

@@ -1,0 +1,46 @@
+.contact{
+    max-height: 100%;
+    max-width:90%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(204, 255, 204, 0.5);
+    margin: 4rem;
+}
+.contact>h1{
+    font: 2rem "Roboto";
+    color: green;
+    margin: 2rem;
+}
+.mailBtn>Button{
+    font: 1.1rem "Roboto";
+   color: rgb(62, 62, 62);
+   text-decoration: none;
+   transition: 0.5s ease;
+}
+.mailBtn>Button:hover{
+    color: rgb(37, 37, 37);
+    background-color: rgb(76, 227, 76);
+}
+.mailBtn{
+    text-decoration: none;
+}
+@media screen and (max-width:600px) {
+.contact{
+    height: 35rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+.contact>h1{
+    font-size: 1.5rem;
+    margin: 1rem;
+
+}
+.mailBtn>Button{
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+    
+}

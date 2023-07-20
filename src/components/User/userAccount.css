@@ -1,0 +1,152 @@
+.profileContainer{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    max-width: 100%;
+    background-color: rgb(220, 218, 218);
+    padding:1rem 4.3rem;
+    box-sizing: border-box;
+
+}
+
+.profilePhoto{
+    width: 25rem;
+    background-color: white;
+    box-shadow: 2px 15px 15px rgba(15,15,15,0.26);
+    height:30%;
+    display: flex;
+    align-items: center;
+    padding: 1.2rem;
+    box-sizing: border-box;
+}
+.editOptions{
+    width: 25rem;
+    background-color: white;
+    box-shadow: 2px 15px 15px rgba(15,15,15,0.26);
+   height:60%
+
+}
+.left{
+    display: flex;
+    flex-direction:column;
+    height: 80vh;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    height:80vh;
+    width: 60%;
+    background-color: white;
+    box-shadow: 2px 15px 15px rgba(15,15,15,0.26);
+    padding: 1.2rem 3rem;
+    box-sizing: border-box;
+    
+}
+.right>h1{
+    font: 2.3rem "Roboto";
+    color:rgb(13, 13, 13)
+}
+.profilePhoto>img{
+    margin: 1.2rem;
+    height:7.6rem;
+    width: 7.6rem;
+    border-radius: 100%;
+}
+.profilePhoto>p{
+    font: 1.32rem "Poppins";
+}
+
+.editOptions>div{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.editOptions>div>div{
+    display: flex;
+    justify-content: space-between;
+    font: 1.5rem "Roboto";
+    border-bottom: 0.4px solid #878787;
+    padding:0.5rem 0;
+    color: #6f6e6e;
+
+}
+.editOptions>div>a{
+text-decoration: none;
+    color:rgb(35, 35, 35);
+    
+    font: 1.2rem "Poppins";
+    padding: 0.5rem;
+    transition: ease 0.35s;
+}
+
+.editOptions>div>a:hover{
+
+    background-color:green;
+    color:white;
+    font-size: 1.3rem;
+}
+.right>div{
+    margin:3.2rem;
+}
+.right>div>h3{
+    font: 1.5rem "Roboto";
+    /* border-bottom: 0.1px solid #878787; */
+    color: #6f6e6e;
+}
+.right>div>p{
+    font: 1rem "Poppins";
+    /* border-bottom: 0.1px solid #878787; */
+    color: rgb(13, 13, 13);
+}
+
+@media screen and (max-width:1200px){
+.profileContainer{
+    flex-direction: column;
+    height: 100%;
+    /* max-height:100vmax; */
+    padding: 2rem;
+}
+.left{
+    margin:0;
+    padding: 0;
+    justify-content: center;
+    width:100%;
+
+    /* height:20rem; */
+    /* flex-direction: row; */
+}
+.right{
+    margin:0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.profilePhoto,
+.editOptions{
+    width:100%;
+}
+.right>h1{
+font-size: 2rem;
+padding: 2rem;
+/* text-align: center; */
+}
+.right>div>h3{
+font-size: 1.5rem;
+}
+.right>div>p{
+    font-size: 1rem;
+    padding: 0;
+}
+.right>div{
+    margin:2.2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+}
+

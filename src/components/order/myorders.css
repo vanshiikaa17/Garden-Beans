@@ -1,0 +1,54 @@
+.myOrdersContainer{
+    padding:4rem;
+    height: 100vh;
+}
+.myOrdersContainer>h2{
+    font: 2.5rem "Poppins";
+    text-align: center;
+    color: rgb(16, 16, 16);
+  padding:1rem
+}
+
+.ordersTable div{
+    font-size: 1.3rem;
+    color: rgb(44, 44, 44);
+    /* display: flex; */
+    /* border: 2px solid black; */
+
+}
+.ordersTable a{
+    text-decoration: none;
+    color: green;
+    transition: ease 0.5s;
+ }
+ .ordersTable svg{
+    font-size: 2rem;
+    /* padding: 0.1rem; */
+ }
+.ordersTable a:hover{
+    color: rgb(3, 59, 3);
+    font-size: 1.5rem;
+
+}
+
+.MuiDataGrid-columnHeaderTitle{
+    /* background-color: rgb(178, 178, 178) !important; */
+    color: white !important;
+}
+.MuiDataGrid-iconSeparator{
+    display: none !important;
+}
+
+@media screen and (max-width:900px) {
+    .myOrdersContainer{
+        padding:1rem;
+        margin: 0.5rem;
+    }
+.myOrdersContainer>h2{
+    margin-top: 6rem;
+}
+.ordersTable div{
+    font-size:1rem;
+}
+
+}

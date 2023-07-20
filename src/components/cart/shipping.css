@@ -1,0 +1,81 @@
+.shippingDetailsContainer{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(191, 189, 189); */
+}
+.shippingDetailsBox>h2{ 
+    font: 1.6rem "Poppins";
+    text-align: center;
+    margin: 2rem;
+    padding: 0.8rem;
+    border-bottom: 0.1px solid #878787;
+}
+.shippingDetailsBox>p{
+    font: 1rem "Poppins";
+    text-align: center;
+    margin: 0.5rem 1.2rem;
+    padding: 1rem;
+}
+.shippingDetailsBox{
+    background-color: white;
+    height: 40rem;
+    width:25rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.shippingDetailsForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40rem;
+    /* margin: 2rem; */
+    transition:all 0.8s;
+}
+
+.inputFields{
+    display:flex;
+    width: 100%;
+    align-items: center;
+   margin: 0.5rem;
+
+}
+
+.shippingDetailsInput{
+    padding: 0.8rem 1.6rem 0.8rem 2.5rem;
+    width: 100%;
+    font: 1rem "Poppins";
+    outline: none;
+}
+
+
+.shippingDetailsButton{
+    margin: 1.2rem;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    font: 1rem "Roboto";
+    width: 100%;
+}
+.shippingDetailsButton:hover{
+    background-color: rgb(4, 79, 4);
+
+}
+
+
+@media screen and (max-width:600px) {
+    .shippingDetailsContainer{
+        background-color: white;
+        margin: 1rem;
+    }
+    .shippingDetailsBox{
+        /* height:30rem; */
+        border: 1px solid;
+        padding: 1rem;
+    }
+}

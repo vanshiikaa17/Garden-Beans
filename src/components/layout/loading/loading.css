@@ -1,0 +1,22 @@
+.loading{
+    width:100vw;
+    height:100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loading>div{
+    width: 10vmax;
+    height: 10vmax;
+    border-bottom: 0.52rem solid black;
+    border-radius: 50%; 
+    animation: rotate 900ms linear infinite;
+    /* background-color: aqua; */
+}
+
+@keyframes rotate{
+    to{
+        transform: rotateZ(-360deg);
+    }
+}

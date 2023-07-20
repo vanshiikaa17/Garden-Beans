@@ -1,0 +1,84 @@
+.OrderDetailsPage{
+    padding: 4rem 8rem;
+}
+.orderHeading{
+    font: 1.5rem "Roboto";
+    color: rgb(37, 37, 37);
+    /* text-align: center; */
+    margin:1rem 0;
+}
+.orderInfo{
+    font-family: "Poppins"; 
+    margin: 2rem 0;   
+}
+.orderInfo>h3{
+    font-size: 1.5rem;
+    color: rgb(37, 37, 37);
+}
+
+.userInfoBox>div{
+    font-size: 1.2rem;
+    color: rgb(83, 83, 83);
+
+}
+
+.orderSummary{
+    font-size: 1.5rem;
+    font-family: "Poppins";
+    margin: 2rem 0;
+    padding: 1rem 0;
+    color: rgb(37, 37, 37);
+
+}
+.cartItemsList{
+    /* max-height: 20vmax;
+    overflow-y: auto; */
+    /* border: 1px solid rgb(37, 37, 37); */
+    padding: 1rem;
+    margin: 2rem 0;
+    font-size: 1rem;
+
+}
+.cartItemsList>div{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-between;
+    font-family: "Droid Sans";
+
+}
+.cartItemsList>div>img{
+    width:5rem;
+}
+.cartItemsList>div>span>a{
+    text-decoration: none;
+    color: green;
+    transition: ease 0.5s;
+}
+
+.cartItemsList>div>span>a:hover{
+    color:rgb(59, 59, 59);
+    font-size:1.2rem;
+}
+
+.cartItemsList>div>span>p{
+    font-size:1rem;
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .OrderDetailsPage{
+        padding:2rem;
+    }
+.cartItemsList>div{
+    flex-direction: column;
+   
+}
+.cartItemsList{
+    border:1px solid #878787;
+}
+.orderHeading{
+    margin-top:4.2rem ;
+    font-size: 1rem;
+}
+}
