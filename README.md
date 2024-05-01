@@ -18,11 +18,13 @@ You may also see any lint errors in the console.
 
 ### Login page
 For encryption, bcrypt.js is used and for verifying the authenticity of users on the platform, JWT is used.
+
 ![image](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/3acc6cad-e114-4146-b47d-14fc91fdfd0c)
 
 
 ### Forgot Password
-An email will be sent to the provided email and the user can change the password from there.
+An email will be sent to the provided email and the user can change their password.
+
 ![Annotation 2024-05-01 102401](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/12ae69c7-b712-4763-acb2-45f4725156d4)
 
 ### Shop using Filters and Categories
