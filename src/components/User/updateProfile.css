@@ -1,0 +1,105 @@
+.updateContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 189, 189);
+}
+.updateBox>h2{ 
+    font: 1.6rem "Poppins";
+    text-align: center;
+    margin: 1.2rem;
+    padding: 1rem;
+    border-bottom: 0.1px solid #878787;
+}
+.updateBox{
+    background-color: white;
+    height: 32rem;
+    width:25rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.updateForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    margin: 2rem;
+    transition:all 0.8s;
+}
+
+.inputFields{
+    display:flex;
+    width: 100%;
+    align-items: center;
+   margin: 0.5rem;
+
+}
+
+.updateInput{
+    padding: 0.8rem 1.6rem 0.8rem 2.5rem;
+    width: 100%;
+    font: 1rem "Poppins";
+    outline: none;
+}
+.updateImageClass{
+    margin: 1rem;
+    display: flex;
+}
+.updateImageClass>input{
+    margin: 1rem 1rem;
+}
+.updateImageClass>input::file-selector-button{
+    width: 100%;
+    height:3.1rem ;
+    border: none;
+    border-radius: 2rem;
+    font-size: 0.9rem ;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.updateImageClass>input::file-selector-button:hover{
+    background-color: rgba(186, 181, 160, 0.7);
+
+}
+
+.inputFields>svg{
+position: absolute;
+transform: translateX(1vmax);
+font-size: 1.3rem;
+color: rgb(62, 61, 61);
+}
+
+.updateButton{
+    margin: 2.2rem;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    font: 1rem "Roboto";
+    width: 100%;
+}
+.updateButton:hover{
+    background-color: rgb(4, 79, 4);
+
+}
+
+.updateImageClass>img{
+    width: 5.6rem;
+    height: 5.6rem;
+    border-radius:100%;
+    
+}
+@media screen and (max-width:600px) {
+    .updateContainer{
+        background-color: white;
+        margin: 1rem;
+    }
+    .updateBox{
+        border: 1px solid;
+        padding: 1rem;
+    }
+}

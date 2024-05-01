@@ -1,0 +1,25 @@
+.speedDial{
+   position: fixed;
+   top: 3rem;
+   right:4.3rem;
+}
+.speedDialIcon{
+   border-radius: 100%;
+   height: 6rem;
+   width: 6rem;
+
+}
+.speedDialIcon:hover{
+    box-shadow: 2px 15px 15px rgba(15,15,15,0.26);
+
+}
+@media screen and (max-width: 600px) {
+   .speedDial{
+      top:1rem;
+      right:1rem;
+   }
+   .speedDialIcon{
+     height:4rem;
+     width:4rem;
+   }
+}

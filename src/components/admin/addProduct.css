@@ -1,0 +1,144 @@
+.addProductContainer {
+  height: 100%;
+  max-height: 100vmax;
+  margin: 10rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: rgb(255, 250, 250); */
+  /* width:90%; */
+}
+.dashboardtopbarAddProduct {
+  background-color: rgb(226, 223, 223);
+}
+.addProductBox > h2 {
+  font: 1.6rem "Poppins";
+  text-align: center;
+  margin: 1.2rem;
+  padding: 1rem;
+  border-bottom: 0.1px solid #878787;
+}
+.addProductBox {
+  background-color: white;
+  border: 0.1px solid #403d3d;
+  padding: 1rem;
+  height: 60rem;
+  width: 50rem;
+  margin: 5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.addProductForm {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  margin: 2rem;
+  transition: all 0.8s;
+}
+.addProductImage {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputFields {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0.5rem;
+}
+.addProductImage > input::file-selector-button {
+  width: 100%;
+  height: 3.1rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.addProductImage > input::file-selector-button:hover {
+  background-color: rgba(160, 156, 140, 0.7);
+}
+.addProductInput {
+  padding: 0.8rem 1.6rem 0.8rem 2.5rem;
+  width: 100%;
+  font: 1rem "Poppins";
+  outline: none;
+}
+
+.inputFields > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.3rem;
+  color: rgb(62, 61, 61);
+}
+
+.addProductButton {
+  margin: 2.2rem;
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  font: 1rem "Roboto";
+  width: 100%;
+}
+.addProductButton:hover {
+  background-color: rgb(4, 79, 4);
+}
+.imgpreview {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .addProductContainer {
+    background-color: white;
+    margin: 9rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 100vh;
+    /* position: absolute; */
+  }
+  .addProductBox {
+    border: 1px solid;
+    padding: 0;
+    max-height: 100%;
+    height: 100vh;
+    width: 100%;
+    margin: 0rem;
+    
+  }
+.addProductBox > h2 {
+    margin-bottom: 0rem;
+}
+  .dashboardtopbarAddProduct {
+    background-color: white;
+  }
+  .addProductForm {
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1rem;
+    /* box-sizing: border-box; */
+
+    /* overflow: none; */
+  }
+  .addProductButton {
+    margin-top: 0;
+    /* margin-bottom: 3rem; */
+  }
+  .imgpreview {
+    margin: 0;
+    width: 1rem;
+
+  }
+  .addProductImage > input::file-selector-button {
+    height: 2rem;
+   
+  }
+}

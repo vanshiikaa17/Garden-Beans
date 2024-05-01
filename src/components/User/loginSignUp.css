@@ -1,0 +1,185 @@
+.loginSignupContainer{
+    height: 100vh;
+    /*width:100vw;
+    max-width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 189, 189);
+}
+
+
+.loginSignupBox{
+    background-color: white;
+    /* padding: 2rem; */
+    height: 32rem;
+    width:25rem;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.loginSignupToggle{
+    display: flex;
+    justify-content: space-between;
+
+}
+.loginSignupToggle>p{
+    display: flex;
+    cursor: pointer;
+    transition: ease-out 0.6s ;
+    font: 1.2rem "Roboto";
+    padding: 1rem 2rem;
+}
+
+.loginSignupToggle>p:hover{
+    color:green;
+    /* color:rgb(240,198,1); */
+
+}
+
+.loginRegisterToggle{
+    /* background-color: rgb(240,198,1); */
+    background-color: green;
+    border: none;
+    height: 0.3rem;
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+.loginForm,
+.signupForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30rem;
+    margin: 2rem;
+    transition:all 0.8s;
+    /* justify-content: space-evenly; */
+}
+.signupForm{
+
+    transform: translateY(-100%) translateX(-100vmax);
+    
+
+}
+.signupImageClass>img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius:100%;
+    
+}
+.signupImageClass{
+    margin: 1rem;
+    display: flex;
+}
+.signupImageClass>input{
+    margin: 0.3rem;
+}
+.signupImageClass>input::file-selector-button{
+    width: 100%;
+    height:3.1rem ;
+    border: none;
+    border-radius: 2rem;
+    font-size: 0.9rem ;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+.signupImageClass>input::file-selector-button:hover{
+    background-color: rgba(186, 181, 160, 0.7);
+
+}
+.inputFields{
+    display:flex;
+    width: 100%;
+    align-items: center;
+   margin: 0.5rem;
+
+    /* justify-content: center; */
+}
+.inputFieldsLogin{
+    display:flex;
+    width: 100%;
+    align-items: center;
+   margin: 1.2rem;
+
+    /* justify-content: center; */
+}
+
+.loginInput{
+    padding: 0.8rem 1.6rem 0.8rem 2.5rem;
+    width: 100%;
+    font: 1rem "Poppins";
+    outline: none;
+}
+.signupInput{
+    padding: 0.8rem 1.6rem 0.8rem 2.5rem;
+    width: 100%;
+    font: 1rem "Poppins";
+    outline: none;
+}
+
+.inputFields>svg,
+.inputFieldsLogin>svg{
+position: absolute;
+transform: translateX(1vmax);
+font-size: 1.3rem;
+color: rgb(62, 61, 61);
+}
+
+.forgotPasswordLink{
+text-decoration: none;
+transition: ease-in-out 0.5s;
+font: 1rem "Roboto";
+align-self: flex-end;
+padding-right: 2rem;
+color: black;
+}
+.forgotPasswordLink:hover{
+color: green;
+font-size: 1.1rem;
+}
+
+.LoginButton,
+.SignupButton{
+    margin: 4.2rem;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    font: 1rem "Roboto";
+    width: 100%;
+}
+.SignupButton{
+    margin: 0.5rem;
+
+}
+.LoginButton:hover,
+.SignupButton:hover{
+    background-color: rgb(4, 79, 4);
+}
+
+.shiftToLeft{
+    transform: translateX(-100vmax);
+}
+.shiftToRight{
+    transform: translateX(100%);
+}
+.shiftToNeutral{
+    transform: translateX(0%);
+}
+.shiftToNeutralForm{
+    transform: translateX(0%) translateY(-100%);
+}
+@media screen and (max-width:600px) {
+    .loginSignupContainer{
+        background-color: white;
+        margin: 1rem;
+    }
+    .loginSignupBox{
+        border: 1px solid;
+        padding: 1rem;
+    }
+}

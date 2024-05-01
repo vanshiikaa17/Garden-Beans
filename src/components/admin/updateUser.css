@@ -1,0 +1,126 @@
+.updateUserContainer {
+  height: 50rem;
+  /* max-height: 100vmax; */
+  margin: 10rem;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* background-color: rgb(255, 250, 250); */
+  /* width:90%; */
+}
+.dashboardtopbarupdateUser {
+  background-color: rgb(226, 223, 223);
+}
+.updateUserBox > h2 {
+  font: 1.6rem "Poppins";
+  text-align: center;
+  margin: 1.2rem;
+  padding: 1rem;
+  border-bottom: 0.1px solid #878787;
+}
+.updateUserBox {
+  background-color: white;
+  border: 0.1px solid #403d3d;
+  padding: 1rem;
+  height: 30rem;
+  width: 50rem;
+  margin: 5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.updateUserForm {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  margin: 2rem;
+  transition: all 0.8s;
+}
+.updateUserImage {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputFields {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0.5rem;
+}
+.updateUserImage > input::file-selector-button {
+  width: 100%;
+  height: 3.1rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.updateUserImage > input::file-selector-button:hover {
+  background-color: rgba(160, 156, 140, 0.7);
+}
+.updateUserInput {
+  padding: 0.8rem 1.6rem 0.8rem 2.5rem;
+  width: 100%;
+  font: 1rem "Poppins";
+  outline: none;
+}
+
+.inputFields > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.3rem;
+  color: rgb(62, 61, 61);
+}
+
+.updateUserButton {
+  margin: 2.2rem;
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  font: 1rem "Roboto";
+  width: 100%;
+}
+.updateUserButton:hover {
+  background-color: rgb(4, 79, 4);
+}
+
+@media screen and (max-width: 1200px) {
+  .updateUserContainer {
+    background-color: white;
+    margin: 9rem 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    /* height: 100vh; */
+    /* position: absolute; */
+  }
+  .updateUserBox {
+    border: 1px solid;
+    padding: 0;
+    /* max-height: 100%; */
+    height: 30rem;
+    width: 100%;
+    margin: 0rem;
+  }
+  .updateUserBox > h2 {
+    margin-bottom: 0rem;
+  }
+  .dashboardtopbarupdateUser {
+    background-color: white;
+  }
+  .updateUserForm {
+    
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1rem;
+  }
+ 
+  
+}

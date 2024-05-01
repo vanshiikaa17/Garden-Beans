@@ -1,0 +1,54 @@
+.userOrder {
+  margin-top: 8rem;
+  background-color: #f9f4f4;
+  padding: 1rem;
+}
+.updateOrderButton {
+  margin: 2.2rem;
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  font: 1rem "Roboto";
+  width: 60%;
+}
+.updateOrderButton:hover {
+  background-color: rgb(4, 79, 4);
+}
+.updateOrderInput {
+  padding: 0.8rem 1.6rem 0.8rem 2.5rem;
+  width: 100%;
+  font: 1rem "Poppins";
+  outline: none;
+}
+.updateOrderForm {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  margin: 2rem;
+  transition: all 0.8s;
+}
+.updateOrderInputFields {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  /* justify-content: center; */
+  margin: 0.5rem;
+}
+.updateOrderInputFields > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.3rem;
+  color: rgb(62, 61, 61);
+}
+
+@media screen and (max-width:700px) {
+.updateOrderInputFields, .updateOrderButton {
+    width: 100%;
+}
+}

@@ -1,0 +1,133 @@
+.dashBoardContainer {
+  display: grid;
+  max-width: 100%;
+
+  width: 100vw;
+  grid-template-rows: 1fr 5fr;
+  max-height: 100%;
+  height: 100vh;
+  /* position: absolute; */
+}
+.dashboardContent {
+  background-color: rgb(248, 248, 248);
+  margin: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw; */
+  /* position: relative; */
+}
+.dashboardtopbar {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+.dashboardData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  /* width: 90vw; */
+}
+.dashboardData > a {
+  text-align: center;
+  text-decoration: none;
+  font: 2.5rem "Poppins";
+  height: 12rem;
+  width: 12rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  box-sizing: border-box;
+  transition: ease-in 0.2s;
+
+  color: rgb(226, 34, 98);
+}
+.dashboardData > a:nth-child(2):hover{
+  filter: drop-shadow(0 0 5px rgb(135, 7, 50));
+
+}
+.dashboardData h1 {
+  font-size: 1.5rem;
+}
+.dashboardheading{
+    width: 100%;
+    text-align: center;
+}
+.dashboardContent h2 {
+  text-align: center;
+  font: 2rem "Roboto";
+  margin-top: 2rem;
+  /* background-color: rgb(1, 212, 240); */
+  padding: 1rem;
+}
+.dashboardData > a:first-child {
+  color: rgb(36, 170, 2);
+}
+.dashboardData > a:first-child:hover {
+  filter: drop-shadow(0 0 5px rgb(5, 52, 5));
+
+}
+.dashboardData > a:last-child {
+  color: rgb(144, 3, 252);
+
+}
+.dashboardData > a:last-child:hover {
+  filter: drop-shadow(0 0 5px rgb(92, 0, 162));
+
+}
+.dashboardheading{
+  margin:1rem;
+  /* width: 50%; */
+}
+.adminStock{
+  font:200 1.5rem "Poppins";
+  text-align: center;
+}
+.adminStock>span{
+  color: red;
+}
+@media screen and (max-width:1200px) {
+  .dashBoardContainer{
+    display: flex;
+    flex-direction: column;
+    /* width: 90%; */
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+.dashboardData {
+  /* flex-direction: column; */
+  height: 100%;
+  max-height: 100vmax;
+}
+.dashboardtopbar {
+  position: relative;
+}
+.dashboardContent {
+  /* max-width: 60vw; */
+  width: 100%;
+  background-color: white;
+  margin-top: 10rem;
+  /* justify-content: center; */
+  
+}
+.dashboardData > a {
+  background-color: aliceblue;
+  height: 6rem;
+  width: 6rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+
+}
+.dashboardData h1 {
+  font-size: 1.2rem;
+}
+}

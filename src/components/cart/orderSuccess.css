@@ -1,0 +1,41 @@
+.ordersuccess{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+.ordersuccess>svg{
+    font-size: 5rem;
+    color: green;
+    margin: 1rem;
+}
+.ordersuccess>h2{
+    font: 3rem "Droid Sans";
+    color: rgb(37, 37, 37);
+    margin: 1rem;
+
+}
+
+.ordersuccess>a{
+    font:1.2rem "Roboto";
+    text-decoration: none;
+    width: 12rem;
+    background-color: green;
+    color:white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: ease 0.5s;
+    text-align: center;
+}
+.ordersuccess>a:hover{
+    background-color: rgb(7, 77, 7);
+
+}
+
+@media screen and (max-width:700px) {
+.ordersuccess>h2{
+    font-size: 2rem;
+}
+}

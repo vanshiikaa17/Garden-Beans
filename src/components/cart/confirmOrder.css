@@ -1,0 +1,99 @@
+.confirmOrderPage{
+    padding:6rem;
+}
+
+.userInformation,.totalPrice{
+    font-family: "Poppins";
+    
+}
+.totalPrice>h3,.userInformation>h3{
+    font-size: 1.8rem;
+    color: rgb(37, 37, 37);
+}
+
+.userInfoBox, .totalPrice>div{
+    font-size: 1.2rem;
+    color: rgb(83, 83, 83);
+
+}
+
+.orderSummary{
+    font-size: 1.6rem;
+    font-family: "Poppins";
+    margin: 2rem 0;
+    padding: 1rem 0;
+    color: rgb(37, 37, 37);
+
+}
+.cartItemsList{
+    max-height: 40vmax;
+    overflow-y: auto;
+}
+.cartItemsList>div{
+    display: flex;
+    margin: 2rem;
+    justify-content: space-between;
+    font-family: "Droid Sans";
+}
+.cartItemsList>div>img{
+    width:10rem;
+}
+.cartItemsList>div>span>a{
+    text-decoration: none;
+    color: green;
+    transition: ease 0.5s;
+}
+
+.cartItemsList>div>span>a:hover{
+    color:rgb(59, 59, 59);
+    font-size:2rem;
+}
+
+.cartItemsList>div>span>p{
+    font-size:1.3rem;
+
+}
+
+.totalCharge>p{
+    color: rgb(37, 37, 37);
+    font: 1.8rem "Droid Sans";
+    margin: 2rem 0;
+
+}
+
+.proceedButton{
+    margin: 1.2rem;
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    font: 1rem "Roboto";
+    width: 50%;
+}
+.paymentButton:hover{
+    background-color: rgb(4, 79, 4);
+
+}
+.paymentButtonDiv{
+    display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .confirmOrderPage{
+        padding:2rem;
+    }
+.cartItemsList>div{
+    flex-direction: column;
+}
+.orderSummary{
+    border-top:1px solid #878787;
+    border-bottom:1px solid #878787;
+}
+.paymentButton{
+width:100%;
+}
+}
