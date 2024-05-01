@@ -39,6 +39,8 @@ An email will be sent to the provided email and the user can change the password
 ![Annotation 2024-05-01 101818](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/4aec8238-afb8-477e-8501-f3d1b8c33d26)
 
 ### Admin Dashboard
+Admin can manage all the orders from dashboard, view all the users, add new products and update the stock of the products.
+
 ![image](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/9fbe1466-780b-4c3e-b9f2-7acde6d8cb80)
 
 
