@@ -69,7 +69,7 @@ function App() {
 
   return (
     <div>
-    <Router>
+    <Router basename="/">
       <ScrollToTop/>
     {isAuthenticated && <UserInfo user={user}/>}  
     <Header/>
