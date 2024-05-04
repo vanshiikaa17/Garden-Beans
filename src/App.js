@@ -47,9 +47,9 @@ function App() {
 
   const [stripeApiKey, setStripeApi] = useState("");
   async function getStripeApi(){
-    const key = await axios.get("/api/payments/stripeapi");
+    // const key = await axios.get("/api/payments/stripeapi");
     // console.log(key.data.stripeAPIKey);
-    setStripeApi(key.data.stripeAPIKey) ;
+    // setStripeApi(key.data.stripeAPIKey) ;
   }
 
   const dispatch=useDispatch();
@@ -59,7 +59,7 @@ function App() {
         families:["Roboto","Droid Sans", "Chilanka", "Bad Script", "Poppins"]
       }
     });
-    getStripeApi();
+    // getStripeApi();
 
     dispatch(loadUserDetails());
 
