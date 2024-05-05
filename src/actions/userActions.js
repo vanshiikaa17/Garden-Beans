@@ -32,7 +32,8 @@ import {
     DELETE_USER_SUCCESS,
     DELETE_USER_FAIL
 } from "../constants/userConstants";
-
+import { baseUrl } from '../env';
+axios.defaults.withCredentials = true;
 export const loginUser=(email,password)=>async(dispatch)=>{
     try{
         dispatch({type:LOGIN_REQUEST});
@@ -40,7 +41,7 @@ export const loginUser=(email,password)=>async(dispatch)=>{
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
         const {data}=await axios.post(
-            `/api/users/login`,
+            `${baseUrl}/api/users/login`,
             {email,password},
             requestHeaders
         );
@@ -55,7 +56,7 @@ export const loadUserDetails=()=>async(dispatch)=>{
         dispatch({type:USER_DETAILS_REQUEST});
 
         const {data}=await axios.get(
-            `/api/users/mydetails`
+            `${baseUrl}/api/users/mydetails`
         );
 
         dispatch({type:USER_DETAILS_SUCCESS, payload:data.user});
@@ -71,7 +72,7 @@ export const signupUser=(userInfo)=>async(dispatch)=>{
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
         const {data}=await axios.post(
-            `/api/users/newuser`,
+            `${baseUrl}/api/users/newuser`,
             userInfo,
             requestHeaders
         );
@@ -84,7 +85,7 @@ export const signupUser=(userInfo)=>async(dispatch)=>{
 
 export const logout=()=>async(dispatch)=>{
     try{
-        await axios.get(`/api/users/logout`)
+        await axios.get(`${baseUrl}/api/users/logout`)
         dispatch({type:LOGOUT_SUCCESS});
     }catch(error){
         dispatch({type:LOGOUT_FAIL, payload:error.response.data.message});
@@ -100,7 +101,7 @@ export const forgotPassword=(email)=>async(dispatch)=>{
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
         const {data}=await axios.post(
-            `/api/users/password/reset`,
+            `${baseUrl}/api/users/password/reset`,
             email,
             requestHeaders
         );
@@ -119,7 +120,7 @@ export const resetPassword=(token, passwords)=>async(dispatch)=>{
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
         const {data}=await axios.put(
-            `/api/users/password/reset/${token}`,
+            `${baseUrl}/api/users/password/reset/${token}`,
             passwords,
             requestHeaders
         );
@@ -135,7 +136,7 @@ export const getAllUsers=()=>async(dispatch)=>{
         dispatch({type:ALL_USERS_REQUEST});
 
         const {data}=await axios.get(
-            `/api/users/admin/allusers`
+            `${baseUrl}/api/users/admin/allusers`
         );
 
         dispatch({type:ALL_USERS_SUCCESS, payload:data.users});
@@ -149,7 +150,7 @@ export const getUserDetails=(id)=>async(dispatch)=>{
         dispatch({type:ADMIN_USER_DETAILS_REQUEST});
 
         const {data}=await axios.get(
-            `/api/users/admin/userdetails/${id}`
+            `${baseUrl}/api/users/admin/userdetails/${id}`
         );
 
         dispatch({type:ADMIN_USER_DETAILS_SUCCESS, payload:data.user});
@@ -167,7 +168,7 @@ export const updateUser=(id, userData)=>async(dispatch)=>{
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
         const {data}=await axios.put(
-            `/api/users/admin/userdetails/${id}`,
+            `${baseUrl}/api/users/admin/userdetails/${id}`,
             userData,
             requestHeaders
         );
@@ -183,9 +184,12 @@ export const deleteUser=(id)=>async(dispatch)=>{
     try{
 
         dispatch({type:DELETE_USER_REQUEST});
-
+        
         const {data}=await axios.delete(
-            `/api/users/admin/userdetails/${id}`,
+            `${baseUrl}/api/users/admin/userdetails/${id}`,
+            {
+                withCredentials: true
+              }
         );
 
         dispatch({type:DELETE_USER_SUCCESS, payload:data.success});

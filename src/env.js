@@ -1,0 +1,1 @@
+export const baseUrl="https://garden-beans-server.onrender.com";
