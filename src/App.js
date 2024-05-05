@@ -22,7 +22,7 @@ import { ResetPassword } from './components/User/ResetPassword';
 import { Cart } from './components/cart/Cart';
 import { Shipping } from './components/cart/Shipping';
 import { ConfirmOrder } from './components/cart/ConfirmOrder';
-import axios from 'axios';
+// import axios from 'axios';
 import { Payments } from './components/cart/Payments';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';

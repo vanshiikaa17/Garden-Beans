@@ -1,13 +1,14 @@
 import axios from 'axios';
 import { CLEAR_ERROR, UPDATE_PASSWORD_FAIL, UPDATE_PASSWORD_REQUEST, UPDATE_PASSWORD_SUCCESS, UPDATE_PROFILE_FAIL, UPDATE_PROFILE_REQUEST, UPDATE_PROFILE_SUCCESS } from '../constants/userConstants';
-
+import { domainName } from '../env';
+axios.defaults.withCredentials = true;
 export const updateDetails=(userData)=>async(dispatch)=>{
     try{
         dispatch({type:UPDATE_PROFILE_REQUEST});
 
         const requestHeaders={headers:{"Content-Type":"multipart/form-data"}}
 
-        const {data}=await axios.put(`/api/users/changemydetails`, userData, requestHeaders);
+        const {data}=await axios.put(`${domainName}/api/users/changemydetails`, userData, requestHeaders);
 
         dispatch({type:UPDATE_PROFILE_SUCCESS, payload:data.success});
 
@@ -22,7 +23,7 @@ export const updatePassword=(password)=>async(dispatch)=>{
 
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
-        const {data}=await axios.put(`/api/users/changepassword`, password, requestHeaders);
+        const {data}=await axios.put(`${domainName}/api/users/changepassword`, password, requestHeaders);
 
         dispatch({type:UPDATE_PASSWORD_SUCCESS, payload:data.success});
 

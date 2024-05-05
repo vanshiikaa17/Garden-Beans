@@ -24,14 +24,15 @@ import {
     UPDATE_PRODUCT_SUCCESS,
     UPDATE_PRODUCT_FAIL
 } from "../constants/productConstants";
-
+import { domainName } from '../env';
+axios.defaults.withCredentials = true;
 export const getProducts=(keyword="", currentPage=1, price=[0,2500], category, ratings=0)=>async(dispatch)=>{
     try{
         dispatch({type:ALL_PRODUCT_REQUEST});
 
-        let link=`/api/products/allproducts?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
+        let link=`${domainName}/api/products/allproducts?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
         if(category){
-            link=`/api/products/allproducts?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`
+            link=`${domainName}/api/products/allproducts?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`
         }
         const {data}=await axios.get(link);
         
@@ -49,7 +50,7 @@ export const getProducts=(keyword="", currentPage=1, price=[0,2500], category, r
 export const getProductDetails=(id)=>async(dispatch)=>{
     try{
         dispatch({type:PRODUCT_DETAILS_REQUEST});
-        const {data}=await axios.get(`/api/products/allproducts/${id}`);
+        const {data}=await axios.get(`${domainName}/api/products/allproducts/${id}`);
 
         dispatch({
             type:PRODUCT_DETAILS_SUCCESS,
@@ -68,7 +69,7 @@ export const getProductsAdmin=()=>async(dispatch)=>{
     try{
         dispatch({type:ADMIN_PRODUCT_REQUEST});
 
-        const {data} = await axios.get(`/api/products/admin/allproducts`);
+        const {data} = await axios.get(`${domainName}/api/products/admin/allproducts`);
 
         dispatch({type:ADMIN_PRODUCT_SUCCESS, payload:data.allProducts});
 
@@ -87,7 +88,7 @@ export const addReview=(review)=>async(dispatch)=>{
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
         dispatch({type:NEW_REVIEW_REQUEST});
-        const {data}=await axios.put(`/api/products/review`, review, requestHeaders);
+        const {data}=await axios.put(`${domainName}/api/products/review`, review, requestHeaders);
 
         dispatch({
             type:NEW_REVIEW_SUCCESS,
@@ -108,7 +109,7 @@ export const addProduct=(product)=>async(dispatch)=>{
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
         dispatch({type:NEW_PRODUCT_REQUEST});
-        const {data}=await axios.post(`/api/products/admin/allproducts/new`, product, requestHeaders);
+        const {data}=await axios.post(`${domainName}/api/products/admin/allproducts/new`, product, requestHeaders);
 
         dispatch({
             type:NEW_PRODUCT_SUCCESS,
@@ -129,7 +130,7 @@ export const updateProduct=(id, product)=>async(dispatch)=>{
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
         dispatch({type:UPDATE_PRODUCT_REQUEST});
-        const {data}=await axios.put(`/api/products/admin/allproducts/${id}`, product, requestHeaders);
+        const {data}=await axios.put(`${domainName}/api/products/admin/allproducts/${id}`, product, requestHeaders);
 
         dispatch({
             type:UPDATE_PRODUCT_SUCCESS,
@@ -150,7 +151,7 @@ export const deleteProduct=(id)=>async(dispatch)=>{
         const requestHeaders={headers:{"Content-Type":"application/json"}}
 
         dispatch({type:DELETE_PRODUCT_REQUEST});
-        const {data}=await axios.delete(`/api/products/admin/allproducts/${id}`, id, requestHeaders);
+        const {data}=await axios.delete(`${domainName}/api/products/admin/allproducts/${id}`, id, requestHeaders);
 
         dispatch({
             type:DELETE_PRODUCT_SUCCESS,
