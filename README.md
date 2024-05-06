@@ -2,9 +2,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
@@ -14,57 +11,43 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### Garden Beans provides a complete web based interface for users to purchase plants and gardening tools online.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Home page
+![Annotation 2024-05-01 101942](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/2145e0ad-3798-4463-b6cb-a5bb8ab35e03)
 
-### `npm run build`
+### Login page
+For encryption, bcrypt.js is used and for verifying the authenticity of users on the platform, JWT is used.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/3acc6cad-e114-4146-b47d-14fc91fdfd0c)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Forgot Password
+An email will be sent to the provided email and the user can change their password.
 
-### `npm run eject`
+![Annotation 2024-05-01 102401](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/12ae69c7-b712-4763-acb2-45f4725156d4)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Shop using Filters and Categories
+![Annotation 2024-05-01 102141](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/01e6bc9a-b160-46b5-aeb4-489ec4ed22f7)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Reviews
+![Annotation 2024-05-01 102010](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/9e51f3e5-ad57-42bb-85ea-ed18e0869950)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Tracking orders
+![Annotation 2024-05-01 101918](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/62fb4628-c8b8-4d0c-929a-a10c468fd10c)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Payment Gateway - Stripe for seampless online payments
+![Annotation 2024-05-01 101838](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/2c7608e6-f539-4a90-9fde-fe8db9ff602f)
+![Annotation 2024-05-01 101818](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/4aec8238-afb8-477e-8501-f3d1b8c33d26)
 
-## Learn More
+### Admin Dashboard
+Admin can manage all the orders from dashboard, view all the users, add new products and update the stock of the products.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://github.com/vanshiikaa17/Garden-Beans/assets/92240620/9fbe1466-780b-4c3e-b9f2-7acde6d8cb80)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
